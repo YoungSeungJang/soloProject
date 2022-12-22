@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/spotifyStyle.css">
+    <script src="https://kit.fontawesome.com/d1c72c4e39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <!-- sideBarLeft -->
+        <nav>
+            <div id="navMain">
+                <div class="flex navItem"><i class="fas fa-ellipsis-h"></i></div>
+                <div class="flex navItem">
+                    <div><i class="fas fa-home"></i></div>
+                    <div>홈</div>
+                </div>
+                <div class="flex navItem">
+                    <div><i class="fas fa-search"></i></div>
+                    <div>검색하기</div>
+                </div>
+                <div class="flex navItem">
+                    <div><i class="fas fa-book"></i></div>
+                    <div>내 라이브러리</div>
+                </div>
+            </div>
+            <div id="navSub">
+                <div class="flex navItem">
+                    <div><i class="fas fa-tasks"></i></div>
+                    <div>플레이리스트 만들기</div>
+                </div>
+                <div class="flex navItem">
+                    <div><i class="fas fa-heart"></i></div>
+                    <div>좋아요 표시한 곡</div>
+                </div>
+            </div>
+            <div id="myPlayList">
+                <div>내 플레이리스트 #5</div>
+                <div>내 플레이리스트 #4</div>
+                <div>내 플레이리스트 #3</div>
+                <div>내 플레이리스트 #2</div>
+                <div>내 플레이리스트 #1</div>
+            </div>
+        </nav>
+        <!-- 좋아요 표시한 곡main -->
+        <section>
+            <div id="sectionHeader">
+                <div id="sectionHeaderTop">
+                    <div class="flex">
+                        <div><i class="fas fa-chevron-circle-left"></i></div>
+                        <div><i class="fas fa-chevron-circle-right"></i></div>
+                    </div>
+                    <div class="flex">
+                        <div>Premium 가입하기</div>
+                        <div>YoungSeung</div>
+                    </div>
+                </div>
+                <div id="sectionHeaderMid">
+                    <div><i class="fas fa-heart"></i></div>
+                    <div>
+                        <div>플레이리스트</div>
+                        <div>좋아요 표시한 곡</div>
+                        <div>YoungSeung · 441곡</div>
+                    </div>
+                </div>
+            </div>
+            <div id="sectionNav">
+                <div class="flex sectionNavSearch">
+                    <div><i class="fas fa-play-circle"></i></div>
+                    <div>
+                        <div><i class="fas fa-search"></i></div>
+                        <div>추가한 날짜</div>
+                    </div>
+                </div>
+            </div>
+            <div id="sectionItem">
+                <div id="sectionItemBox">
+                    <div class="flex sectionItemInfo">
+                        <div class="flex numAndTitle">
+                            <div>#</div>
+                            <div>제목</div>
+                        </div>
+                        <div class="flex albumDateRuntime">
+                            <div>앨범</div>
+                            <div>추가된 날짜 ▼</div>
+                            <div><i class="far fa-clock"></i></div>
+                        </div>
+                    </div>
+                    <!-- musicItemList -->
+                    <div class="flex" id="sectionItemList">
+                        <div class="flex numAndTitle">
+                            <div id="number">1</div>
+                            <div id="imgAndTitle" class="flex">
+                                <div id="albumImg" class="flex">
+                                    <img src="./assets/img/gryffin_feelgood.jpg" alt="">
+                                </div>
+                                <div class="titleAndArtist">
+                                    <div>Feel Good (feat. Daya)</div>
+                                    <div>Gryffin, ILLENIUM, Daya</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex albumDateRuntime">
+                            <div>Feel Good(feat. Daya)</div>
+                            <div id="addDate">2022년 12월 20일</div>
+                            <div class="flex" id="heartAndRuntime">
+                                <div><i class="fas fa-heart greenHeart tooltip"><span class="tooltiptext tooltip-top">내 라이브러리에서 삭제하기</span></i></div>
+                                <div>4:08</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- musicItemList -->
+                    <div class="flex" id="sectionItemList">
+                        <div class="flex numAndTitle">
+                            <div id="number">2</div>
+                            <div id="imgAndTitle" class="flex">
+                                <div id="albumImg" class="flex">
+                                    <img src="./assets/img/gryffin_feelgood.jpg" alt="">
+                                </div>
+                                <div class="titleAndArtist">
+                                    <div>Feel Good (feat. Daya)</div>
+                                    <div>Gryffin, ILLENIUM, Daya</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex albumDateRuntime">
+                            <div>Feel Good(feat. Daya)</div>
+                            <div id="addDate">2022년 12월 20일</div>
+                            <div class="flex" id="heartAndRuntime">
+                                <div><i class="fas fa-heart greenHeart tooltip"><span class="tooltiptext tooltip-top">내 라이브러리에서 삭제하기</span></i></div>
+                                <div>4:08</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- musicItemList -->
+                    <div class="flex" id="sectionItemList">
+                        <div class="flex numAndTitle">
+                            <!-- 이곳 숫자 -->
+                            <div id="number"></div>
+                            <div id="imgAndTitle" class="flex">
+                                <div id="albumImg" class="flex">
+                                    <!-- 이곳 앨범이미지 -->
+                                    <img src="" alt="앨범이미지">
+                                </div>
+                                <!-- 타이틀, 가수 -->
+                                <div class="titleAndArtist">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex albumDateRuntime">
+                            <!-- 앨범이름 -->
+                            <div></div>
+                            <!-- 추가한 날짜 -->
+                            <div id="addDate"></div>
+                            <div class="flex" id="heartAndRuntime">
+                                <div><i class="fas fa-heart greenHeart tooltip"><span class="tooltiptext tooltip-top">내 라이브러리에서 삭제하기</span></i></div>
+                                <!-- 런타임 -->
+                                <div>4:08</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- playBar -->
+    <footer class="flex">
+        <div class="flex" id="footerAll">
+            <div id="footerLeftInfo" class="flex">
+                <div>
+                    <img src="./assets/img/gryffin_feelgood.jpg" alt="">
+                </div>
+                <div class="titleAndArtist" id="footerLeftTitleAndArtist">
+                    <div>Feel Good (feat. Daya)</div>
+                    <div>Gryffin, ILLENIUM, Daya</div>
+                </div>
+                <div><i class="fas fa-heart greenHeart"></i></div>
+            </div>
+            <audio src="./assets/audio/Gryffin,ILLENIUM_Feel_Good.mp3" controls></audio>
+        </div>
+    </footer>
+    <script src="./js/spotifyJS.js"></script>
+    <script src="./js/musicJS.js"></script>
+</body>
+</html>

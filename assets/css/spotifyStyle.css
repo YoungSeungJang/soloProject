@@ -1,0 +1,437 @@
+:root {
+    /* COLOR */
+    --white-color: #fff;
+    --black-color: #121212;
+    --lightblack-color: #181818;
+    --gray-color: #333;
+
+    /* SIZE */
+    --padding-small : 6px;
+    --padding: 12px;
+    --padding-large: 18px;
+    --margin-small: 10px;
+    --margin: 20px;
+    --margin-large: 40px
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.greenHeart {
+    color: #1ED760;
+}
+
+main {
+    display: flex;
+}
+
+/* sideBarLeft */
+nav {
+    height: 90vh;
+    width: 13%;
+    background-color: #000;
+    color: #b6b6b6;
+}
+
+#navMain > div:first-child {
+    font-size: 1.5rem;
+}
+
+#navMain {
+    margin: calc(var(--margin));
+    font-weight: bold;
+}
+
+#navSub {
+    margin: var(--margin-large) var(--margin);
+    border-bottom: 1px solid var(--gray-color);
+    font-weight: bold;
+}
+
+#navSub > div:last-child > div:first-child {
+    background: linear-gradient(120deg, #4219B6, #788B8A);
+    width: 25px;
+    height: 25px;
+    
+}
+
+.navItem {
+    margin: 18px 0;
+}
+
+.navItem > div:last-child {
+    margin-left: 12px;
+}
+
+.navItem > div i {
+    font-size: 1.3rem;
+}
+
+#navSub > div:last-child > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navSub > div:last-child > div:first-child > i {
+    font-size: 1rem;
+}
+
+#myPlayList {
+    margin: calc(var(--margin));
+}
+
+#myPlayList > div {
+    margin: var(--margin) 0;
+    font-size: 0.95rem;
+}
+
+
+/* main */
+
+section {
+    height: 90vh;
+    width: 88%;
+    background-color: #121212;
+    color: #fff;
+    overflow-y: scroll;
+}
+
+#sectionHeader {
+    /* border: 1px solid green; */
+    height: 35vh;
+    background: linear-gradient(180deg, #4B3593, 75%, #2E215A);
+}
+
+#sectionHeaderTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* sectionHeader>div1 */
+
+#sectionHeaderTop > div:first-child {
+    font-size: 2rem;
+    margin: var(--margin) calc(var(--margin)*1.5);
+}
+
+#sectionHeaderTop > div:first-child > div:last-child {
+    margin-left: var(--margin);
+}
+
+#sectionHeaderTop > div:last-child {
+    margin-right: calc(var(--margin-large)*6);
+}
+
+#sectionHeaderTop > div:last-child > div:first-child {
+    border: 1px solid #777;
+    margin-right: var(--margin-large);
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: var(--padding-small) var(--padding);
+    border-radius: 20px;
+}
+
+#sectionHeaderTop > div:last-child > div:last-child {
+    background-color: #18112E;
+    border-radius: 20px;
+    padding: var(--padding-small) var(--padding-large);
+}
+
+/* sectionHeader2 */
+
+#sectionHeaderMid {
+    display: flex;
+}
+
+#sectionHeaderMid > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #4219B6, #788B8A);
+    margin: var(--margin) calc(var(--margin)*1.5);
+    box-shadow: 0px 0px 50px #332464;
+    width: 220px;
+    height: 220px;
+    font-size: 5rem;
+}
+
+#sectionHeaderMid > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#sectionHeaderMid > div:last-child > div:nth-of-type(1) {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: var(--margin);
+}
+
+#sectionHeaderMid > div:last-child > div:nth-of-type(2) {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+#sectionHeaderMid > div:last-child > div:nth-of-type(3) {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: var(--margin);
+}
+
+/* sectionNav */
+
+#sectionNav {
+    /* border: 1px solid green; */
+    height: 10vh;
+    background: linear-gradient(#1F163C, #1B152F);
+}
+
+#sectionNav > div {
+    /* border-bottom: 1px solid #333; */
+    margin: 0 calc(var(--margin)*1.5)
+}
+
+#sectionNav > div:nth-of-type(1){
+    justify-content: space-between;
+    padding-top: var(--padding-large);
+    /* border: 1px solid red; */
+}
+
+#sectionNav > div:nth-of-type(1) > div:nth-of-type(1) {
+    font-size: 3rem;
+    color: #1ED760;
+}
+
+#sectionNav > div:nth-of-type(1) > div:nth-of-type(2) {
+    display: flex;
+    color: #999;
+    margin-right: var(--margin-large);
+    /* border: 1px solid red; */
+}
+
+#sectionNav > div:nth-of-type(1) > div:nth-of-type(2) > div:first-child {
+    margin-right: var(--margin-large);
+}
+
+#sectionItem {
+    height: 45vh;
+    background: linear-gradient(#171323, var(--black-color));
+}
+
+#sectionItemBox {
+    margin: 0 calc(var(--margin)*1.5);
+    padding-top: var(--padding);
+    /* border-bottom: 1px solid #333; */
+}
+
+.sectionItemInfo {
+    justify-content: space-between;
+    padding-bottom: var(--padding);
+    color: #999;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+}
+
+.numAndTitle {
+    justify-content: left;
+    margin-left: var(--margin);
+    /* border: 1px solid crimson; */
+}
+
+.numAndTitle > div:last-child {
+    margin-left: var(--margin);
+}
+
+.albumDateRuntime {
+    width: 60%;
+    /* border: 1px solid crimson; */
+    justify-content: space-between;
+    margin-right: calc(var(--margin)*3);
+}
+
+.albumDateRuntime > div:nth-of-type(1){
+    margin-left: calc(var(--margin)*5);
+}
+
+.albumDateRuntime > div:nth-of-type(2){
+    margin-left: calc(var(--margin)*7);
+}
+
+#sectionItemList {
+    justify-content: space-between;
+    color: #999;
+    margin-top: var(--margin);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: var(--padding) 0;
+}
+
+#sectionItemList:hover {
+    background-color: #2C2C2C;
+}
+
+#imgAndTitle {
+    align-items: unset;
+}
+
+#number {
+    font-size: 1rem;
+    padding: 0 var(--padding-small);
+}
+
+
+.titleAndArtist {
+    margin-left: var(--margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleAndArtist > div:first-child {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.titleAndArtist > div:last-child {
+    font-size: 0.85rem;
+}
+
+#albumImg > img{
+    width: 50px;
+    height: 50px;
+}
+
+#addDate {
+    margin-right: var(--margin);
+}
+
+#heartAndRuntime > div:first-child {
+    margin-right: var(--margin-large);
+    font-size: 1rem;
+}
+
+
+/* playBar */
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #181818;
+    
+}
+
+#footerAll {
+    justify-content: space-between;
+    width: 70%;
+}
+
+#footerLeftInfo {
+    display: flex;
+}
+
+#footerLeftInfo > div > img {
+    height: 60px;
+    width: 60px;
+    margin-left: var(--margin);
+}
+
+#footerLeftTitleAndArtist {
+    margin: var(--margin);
+}
+
+#footerLeftTitleAndArtist > div:first-child {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#footerLeftTitleAndArtist > div:last-child {
+    font-weight: bold;
+    color: #999;
+}
+
+#footerLeftTitleAndArtist > div {
+    font-size: 0.7rem;
+}
+
+/* 오디오 컨트롤러 css */
+audio {
+    border: 1px solid #999;
+    border-radius: 25px;
+    width: 50%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #999;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+    margin-left: var(--margin);
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+    margin-right: var(--margin);
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+/* 툴팁(요건구글링) */
+
+.tooltip {
+    position: relative;
+    display: block;
+  }
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #d9d9d9;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  .tooltip .tooltip-top {
+    width: 120px;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltip-top::after {
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-color: black transparent transparent transparent;
+  }
